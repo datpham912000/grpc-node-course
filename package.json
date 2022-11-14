@@ -1,19 +1,26 @@
 {
   "name": "grpc-node-course",
   "version": "1.0.0",
-  "description": "course",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "gen:certs": "./scripts/gen_certs.sh",
-    "develop": "SERVER_PORT=50051 node index"
+    "server": "nodemon server/index.js",
+    "client": "node client/client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "pdichone",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdichone/grpc-node-course.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdichone/grpc-node-course/issues"
+  },
+  "homepage": "https://github.com/pdichone/grpc-node-course#readme",
   "dependencies": {
-    "google-protobuf": "^3.10.0",
-    "grpc": "^1.24.1",
-    "knex": "^0.20.1",
-    "pg": "^7.12.1"
+    "@grpc/grpc-js": "^1.1.0",
+    "google-protobuf": "^3.0.0"
   }
 }
