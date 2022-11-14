@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package sum;
+
+message InputNumber{
+    int32 first_number = 1;
+    int32 second_number = 2;
+}
+
+message ResultNumber{
+    int32 result = 1;
+}
+
+service CalculatorService{
+    //Sum API
+    rpc Sum (InputNumber) returns (ResultNumber) {}
+}
