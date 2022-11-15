@@ -1,1 +1,4 @@
-grpc_tools_node_protoc --js_out=import_style=commonjs,binary:server --grpc_out=grpc_js:server --proto_path=./protos/ ./protos/dummy.proto
+grpc_tools_node_protoc ^
+--js_out=import_style=commonjs,binary:server/protos ^
+--grpc_out=grpc_js:server/protos ^
+--proto_path=./protos/ ./protos/sum.proto
